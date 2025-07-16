@@ -1,0 +1,98 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body
+{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("https://rare-gallery.com/uploads/posts/935735-closeup-depth-of-field-food-chocolate-chocolate-cake.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100vh;
+    color:white;
+    margin:0;
+}
+.welcome {
+    position: absolute;
+    top: 37%;
+    left: 60px;
+    font-size: 80px;
+    color: rgb(206, 205, 203);
+}
+
+.quotes {
+    position: absolute;
+    top: 49%; 
+    left: 85px;
+    font-size: 28px;
+    font-style: italic;
+    color: rgb(218, 206, 189)
+}
+.overlay button
+{
+    background-color: lightgray;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color:rgb(17, 17, 17);
+    border-style: 2px solid white;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left:20px;
+    padding-right: 20px;
+    position: absolute;
+    top: 56%; 
+    left: 85px;
+    font-size:15px;
+}
+.nav-bar
+{
+    
+    display:flex;
+    color:white;
+    justify-content: space-between;
+    align-content: center;
+    padding-left: 25px;
+    padding-right:25px;
+}
+.nav-bar h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    margin:0;
+    padding:20px;
+    color: rgb(253, 253, 253);
+}
+.nav-bar ul{
+    display:flex;
+    align-items: center;
+    gap:30px;
+    padding:0;
+    margin:0;
+    list-style:none;
+    font-size:20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 50px;
+}
+.nav-bar ul,li{
+    cursor:pointer;
+}
+.nav-bar input[type="text"]
+{
+    background-color: transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color:rgb(218, 223, 228);
+    border-style: 2px solid white;
+    padding:5px;
+}
+.nav-bar input::placeholder
+{
+    color:lightgray;
+    opacity:1px;
+}
+.nav-bar li a
+{
+    text-decoration: none;
+    color:rgb(253, 252, 252)
+}
