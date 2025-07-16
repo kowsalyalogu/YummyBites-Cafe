@@ -24,7 +24,7 @@ body
 
 .quotes {
     position: absolute;
-    top: 49%; 
+    top: 51%; 
     left: 85px;
     font-size: 28px;
     font-style: italic;
@@ -42,7 +42,7 @@ body
     padding-left:20px;
     padding-right: 20px;
     position: absolute;
-    top: 56%; 
+    top: 59%; 
     left: 85px;
     font-size:15px;
 }
