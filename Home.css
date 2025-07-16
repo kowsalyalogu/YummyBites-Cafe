@@ -4,9 +4,9 @@
     padding:0;
     box-sizing: border-box;
 }
-body
+.overlay
 {
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("https://rare-gallery.com/uploads/posts/935735-closeup-depth-of-field-food-chocolate-chocolate-cake.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("images/Homebg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,30 +19,30 @@ body
     top: 37%;
     left: 60px;
     font-size: 80px;
-    color: rgb(206, 205, 203);
+    color: rgb(141, 91, 51);
 }
 
 .quotes {
     position: absolute;
-    top: 51%; 
+    top: 52%; 
     left: 85px;
     font-size: 28px;
     font-style: italic;
-    color: rgb(218, 206, 189)
+    color:white;
 }
 .overlay button
 {
-    background-color: lightgray;
+    background-color:  rgb(141, 91, 51);
     border-radius: 4px;
     box-sizing: border-box;
-    color:rgb(17, 17, 17);
+    color:white;
     border-style: 2px solid white;
     padding-top:10px;
     padding-bottom: 10px;
     padding-left:20px;
     padding-right: 20px;
     position: absolute;
-    top: 59%; 
+    top: 60%; 
     left: 85px;
     font-size:15px;
 }
@@ -61,12 +61,12 @@ body
     font-size: 35px;
     margin:0;
     padding:20px;
-    color: rgb(253, 253, 253);
+    color: white;
 }
 .nav-bar ul{
     display:flex;
     align-items: center;
-    gap:30px;
+    gap:35px;
     padding:0;
     margin:0;
     list-style:none;
@@ -82,17 +82,17 @@ body
     background-color: transparent;
     border-radius: 4px;
     box-sizing: border-box;
-    color:rgb(218, 223, 228);
+    color: rgb(141, 91, 51);
     border-style: 2px solid white;
     padding:5px;
 }
 .nav-bar input::placeholder
 {
-    color:lightgray;
+    color: lightgray;
     opacity:1px;
 }
 .nav-bar li a
 {
     text-decoration: none;
-    color:rgb(253, 252, 252)
+     color: rgb(141, 91, 51);
 }
