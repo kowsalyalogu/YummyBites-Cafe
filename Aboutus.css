@@ -14,7 +14,7 @@
 }
 .overlay h2
 {
-    color:rgb(156, 104, 60);
+    color:rgb(147, 99, 60);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
     padding-top: 70px;
@@ -27,7 +27,7 @@
     color:rgb(204, 207, 211);
     position: absolute;
     top: 70%;
-    left:350px;
+    left:500px;
 }
 .overlaytext2
 {
@@ -37,6 +37,6 @@
     font-style: italic;
     color:rgb(204, 207, 211);
     position: absolute;
-    top:78%;
-    left:400px;
+    top:79%;
+    left:540px;
 }
