@@ -46,6 +46,11 @@
     left: 85px;
     font-size:15px;
 }
+.overlay button a
+{
+    text-decoration: none;
+    color:white;
+}
 .nav-bar
 {
     
@@ -130,6 +135,28 @@ h2
     object-fit: cover;
     box-shadow: 5px 10px 12px rgba(0, 0, 0, 0.3);
 }
+.Aboutus button 
+{
+    background-color:  rgb(141, 91, 51);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color:white;
+    border: 2px solid rgb(176, 174, 174);
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left:20px;
+    padding-right: 20px;
+    position: absolute;
+    top:140%;
+    left: 378px;
+    font-size:15px;
+    margin-top: 15px;
+}
+.Aboutus button a
+{
+    text-decoration: none;
+    color:white;
+}
 .Product
 {
     display:flex;
@@ -174,4 +201,13 @@ h2
     display: block;       
     margin-left: auto;      
     margin-right: auto;
+}
+.contact
+{
+    width:100%;
+    height:150px;
+    background-color: rgb(133, 41, 41);
+    color: white;
+    padding:50px;
+    padding-top: 30px;
 }

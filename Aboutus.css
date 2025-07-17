@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.overlay
+{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("images/Aboutus.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100vh;
+    margin:0;
+}
+.overlay h2
+{
+    color:rgb(156, 104, 60);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    padding-top: 70px;
+}
+.overlaytext
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    color:rgb(204, 207, 211);
+    position: absolute;
+    top: 70%;
+    left:350px;
+}
+.overlaytext2
+{
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    color:rgb(204, 207, 211);
+    position: absolute;
+    top:78%;
+    left:400px;
+}
