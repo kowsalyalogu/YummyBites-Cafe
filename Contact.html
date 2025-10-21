@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact Us - YummyBites Cafe</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Top Nav Bar -->
+    <div class="navbar-top">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+            <li><a href="Menucard.html">Menu</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <!-- Main Page Content -->
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="forms-flex">
+            <!-- Contact Us Form -->
+            <form class="contact-form">
+                <h2>Send a Message</h2>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Type your message..." required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <!-- Book a Table Form -->
+            <form class="book-table-form">
+                <h2>Book a Table</h2>
+                <label for="guestname">Name</label>
+                <input type="text" id="guestname" placeholder="Booking Name" required>
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" min="1" max="20" required>
+                <label for="date">Date</label>
+                <input type="date" id="date" required>
+                <label for="time">Time</label>
+                <input type="time" id="time" required>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+    <!-- JS Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Contact Form
+            const contactForm = document.querySelector('.contact-form');
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                showSuccessMessage(this, "Message Sent! Thank you for contacting us.");
+                contactForm.reset();
+            });
+            // Book Table Form
+            const tableForm = document.querySelector('.book-table-form');
+            tableForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                showSuccessMessage(this, "Table Booked! We'll contact you for confirmation.");
+                tableForm.reset();
+            });
+            function showSuccessMessage(form, msg) {
+                let msgElem = document.createElement('div');
+                msgElem.className = 'form-success';
+                msgElem.innerText = msg;
+                form.appendChild(msgElem);
+                setTimeout(() => {
+                    msgElem.remove();
+                }, 1700);
+            }
+        });
+    </script>
+</body>
+</html>
