@@ -1,0 +1,145 @@
+body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar-top {
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(180,100,90,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar-top ul {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    list-style: none;
+    margin: 0;
+    padding: 18px 55px 18px 0;
+    font-size: 22px;
+}
+.navbar-top li a {
+    text-decoration: none;
+    color: rgb(181, 121, 72);
+    font-weight: bold;
+    font-family: inherit;
+    transition: color 0.2s;
+}
+.navbar-top li a:hover {
+    color: rgb(133, 41, 41);
+}
+.menu-container {
+    max-width: 1200px;
+    margin: 110px auto 40px auto;
+    padding: 32px 18px;
+    background: #fff;
+    border-radius: 23px;
+    box-shadow: 0 10px 30px rgba(180, 137, 89, 0.09);
+}
+.menu-container h1 {
+    text-align: center;
+    color: rgb(156, 73, 27);
+    font-size: 2.7rem;
+    margin-bottom: 38px;
+    font-weight: 700;
+}
+.menu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 48px;
+}
+.menu-col {
+    flex: 1 1 0;
+    background: #fdf9df;
+    border-radius: 20px;
+    box-shadow: 0 4px 18px rgba(150, 100, 60, 0.08);
+    padding: 24px 18px;
+    min-width: 260px;
+    max-width: 325px;
+    text-align: center;
+}
+.menu-col h2 {
+    color: rgb(181, 121, 72);
+    margin-bottom: 14px;
+    font-size: 1.35rem;
+}
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 220px;
+}
+.menu-card {
+    background: #fbeecf;
+    border-radius: 18px;
+    box-shadow: 0 2px 10px rgba(110, 65, 22, 0.11);
+    padding: 23px 11px;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.menu-card img {
+    width: 130px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 13px;
+    box-shadow: 0 2px 10px rgba(70, 42, 10, 0.07);
+}
+.menu-card h3 {
+    margin: 8px 0 7px 0;
+    font-size: 1.1rem;
+    color: rgb(126, 68, 20);
+    font-weight: 600;
+}
+.menu-card .price {
+    color: rgb(181, 121, 72);
+    font-size: 1.08rem;
+    font-weight: bold;
+}
+.card-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 10px;
+}
+.card-actions button {
+    background: rgb(181, 121, 72);
+    color: #fff;
+    border: none;
+    font-size: 1.25rem;
+    border-radius: 6px;
+    width: 38px;
+    height: 36px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.card-actions button:hover {
+    background: rgb(133, 41, 41);
+}
+@media (max-width: 1100px) {
+    .menu-row {
+        gap: 18px;
+    }
+    .menu-col {
+        max-width: 99vw;
+        min-width: 185px;
+    }
+}
+@media (max-width: 800px) {
+    .menu-row {
+        flex-direction: column;
+        gap: 48px;
+        align-items: center;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Menu - YummyBites Cafe</title>
+    <link rel="stylesheet" href="Menucard.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar-top">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+            <li><a href="Menucard.html">Menu</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="menu-container">
+        <h1>Our Menu</h1>
+        <div class="menu-row">
+            <!-- Beverages -->
+            <div class="menu-col">
+                <h2>Beverages</h2>
+                <div class="card-wrapper" id="beverages-wrapper"></div>
+                <div class="card-actions">
+                    <button onclick="prevCard('beverages')">&larr;</button>
+                    <button onclick="nextCard('beverages')">&rarr;</button>
+                </div>
+            </div>
+            <!-- Starters -->
+            <div class="menu-col">
+                <h2>Starters</h2>
+                <div class="card-wrapper" id="starters-wrapper"></div>
+                <div class="card-actions">
+                    <button onclick="prevCard('starters')">&larr;</button>
+                    <button onclick="nextCard('starters')">&rarr;</button>
+                </div>
+            </div>
+            <!-- Desserts -->
+            <div class="menu-col">
+                <h2>Desserts</h2>
+                <div class="card-wrapper" id="desserts-wrapper"></div>
+                <div class="card-actions">
+                    <button onclick="prevCard('desserts')">&larr;</button>
+                    <button onclick="nextCard('desserts')">&rarr;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuData = {
+            beverages: [
+                { name: "Cappuccino", price: "₹120", image: "images/cappuccino.jpg" },
+                { name: "Iced Latte", price: "₹140", image: "images/latte.jpg" },
+                { name: "Fresh Juice", price: "₹90", image: "images/juice.jpg" }
+            ],
+            starters: [
+                { name: "Garlic Bread", price: "₹110", image: "images/garlicbread.jpg" },
+                { name: "Veg Nachos", price: "₹160", image: "images/nachos.jpg" },
+                { name: "Soup Bowl", price: "₹80", image: "images/soup.jpg" }
+            ],
+            desserts: [
+                { name: "Choco Lava", price: "₹130", image: "images/chocolava.jpg" },
+                { name: "Red Velvet Cake", price: "₹150", image: "images/velvetcake.jpg" },
+                { name: "Fruit Salad", price: "₹100", image: "images/fruitsalad.jpg" }
+            ]
+        };
+
+        let indices = { beverages: 0, starters: 0, desserts: 0 };
+
+        function showCard(section) {
+            const wrapper = document.getElementById(section + '-wrapper');
+            const item = menuData[section][indices[section]];
+            wrapper.innerHTML = `
+                <div class="menu-card">
+                    <img src="${item.image}" alt="${item.name}">
+                    <h3>${item.name}</h3>
+                    <p class="price">${item.price}</p>
+                </div>
+            `;
+        }
+
+        function prevCard(section) {
+            indices[section] = (indices[section] - 1 + menuData[section].length) % menuData[section].length;
+            showCard(section);
+        }
+
+        function nextCard(section) {
+            indices[section] = (indices[section] + 1) % menuData[section].length;
+            showCard(section);
+        }
+
+        window.onload = function() {
+            showCard('beverages');
+            showCard('starters');
+            showCard('desserts');
+        };
+    </script>
+</body>
+</html>
